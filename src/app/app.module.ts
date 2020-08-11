@@ -44,15 +44,15 @@ import {SearchResultPageComponent} from "./pages/search-result-page/search-resul
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    JwtModule.forRoot({
-      config: {
-        tokenGetter: () => {
-          return localStorage.getItem('access_token');
-        },
-        whitelistedDomains: environment.whitelist,
-        blacklistedRoutes: environment.blacklist
-      }
-    })
+    // JwtModule.forRoot({
+    //   config: {
+    //     tokenGetter: () => {
+    //       return localStorage.getItem('access_token');
+    //     },
+    //     whitelistedDomains: environment.whitelist,
+    //     blacklistedRoutes: environment.blacklist
+    //   }
+    // })
   ],
   providers: [
     {
