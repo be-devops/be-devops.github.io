@@ -3,6 +3,7 @@ ROOT_DIR=dist/angular-base
 
 deploy:
 	npm i -g angular-cli-ghpages
+	npm install
 	ng build --prod --vendor-chunk=true
 	ng build --prod --base-href ${BASE_HREF}
 	ng build --prod --base-href=/
