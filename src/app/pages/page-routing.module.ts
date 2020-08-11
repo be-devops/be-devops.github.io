@@ -21,7 +21,6 @@ const subRoutes: Routes = [
       {path: 'blog', component: BlogPageComponent},
       {path: 'contact', component: ContactPageComponent},
       {path: 'search-result', component: SearchResultPageComponent},
-      {path: '**', component: NotFoundComponent},
     ]
   },
 ];

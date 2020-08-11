@@ -11,11 +11,6 @@ const routes: Routes = [
   {path: '', component: HomePageComponent, pathMatch: 'full'},
   {path: 'login', component: LoginComponent, pathMatch: 'full'},
   {
-    path: 'modules',
-    canActivate: [AuthGuard],
-    loadChildren: () => import('./modules/sub.module').then(m => m.SubModule),
-  },
-  {
     path: 'pages',
     canActivate: [AuthGuard],
     loadChildren: () => import('./pages/page.module').then(m => m.PageModule),
